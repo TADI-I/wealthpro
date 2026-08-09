@@ -149,6 +149,7 @@ p { margin-top: 0; }
 .values-intro { padding-left: 0; }
 .value-card:last-child { border-right: 0; padding-right: 0; }
 .value-icon { display: grid; width: 46px; height: 46px; margin-bottom: 48px; place-items: center; border: 1px solid rgba(180,219,115,.45); border-radius: 50%; color: #b4db73; font-family: var(--serif); }
+.value-icon svg { width: 22px; height: 22px; }
 .value-card h3 { margin-bottom: 12px; }
 .value-card p { color: rgba(255,255,255,.62); font-size: .87rem; }
 
@@ -165,6 +166,8 @@ p { margin-top: 0; }
 .footer-links { display: grid; gap: 10px; font-size: .8rem; }
 .footer-links a:hover { color: white; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 30px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,.09); font-size: .68rem; }
+.footer-bottom a { color: #b4db73; }
+.footer-bottom a:hover { color: white; }
 
 .page-hero { position: relative; min-height: 470px; display: grid; align-items: end; overflow: hidden; padding: 90px 0; color: white; background: var(--ink); }
 .page-hero::before { position: absolute; inset: 0; content: ""; opacity: .3; background-size: cover; background-position: center; }

@@ -37,7 +37,6 @@ button, input, textarea, select { font: inherit; }
 .eyebrow {
   display: flex;
   align-items: center;
-  gap: 12px;
   margin: 0 0 16px;
   color: var(--green);
   font-size: 0.74rem;
@@ -45,7 +44,6 @@ button, input, textarea, select { font: inherit; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
-.eyebrow::before { width: 30px; height: 1px; content: ""; background: currentColor; }
 .section-dark .eyebrow, .hero .eyebrow, .page-hero .eyebrow { color: #b4db73; }
 h1, h2, h3 { margin-top: 0; font-family: var(--serif); font-weight: 600; line-height: 1.08; }
 h1 { font-size: clamp(3.1rem, 6vw, 6.2rem); letter-spacing: -0.045em; }
@@ -76,9 +74,6 @@ p { margin-top: 0; }
 .button-light:hover { background: white; border-color: white; }
 .button-outline { color: var(--ink); background: transparent; border-color: rgba(16,39,37,.28); }
 .button-outline:hover { color: white; background: var(--ink); border-color: var(--ink); }
-.arrow { font-size: 1.15rem; transition: transform .2s ease; }
-.button:hover .arrow, .text-link:hover .arrow { transform: translateX(4px); }
-
 .topbar { padding: 9px 0; color: rgba(255,255,255,.8); background: #0b1d1b; font-size: .73rem; }
 .topbar-inner { display: flex; justify-content: space-between; gap: 20px; }
 .topbar a:hover { color: white; }
@@ -135,9 +130,9 @@ p { margin-top: 0; }
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .service-card { position: relative; min-height: 360px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; padding: 34px; color: white; background: #263f3b; }
 .service-card::before { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, transparent 12%, rgba(4,18,15,.88) 100%); z-index: 1; }
-.service-card:nth-child(1) { background: linear-gradient(135deg, rgba(16,39,37,.15), rgba(16,39,37,.9)), url("assets/images/wealthpro-services.png") left center/cover; }
-.service-card:nth-child(2) { background: linear-gradient(135deg, rgba(16,39,37,.25), rgba(16,39,37,.92)), url("assets/images/wealthpro-team.png") center/cover; }
-.service-card:nth-child(3) { background: linear-gradient(135deg, rgba(16,39,37,.1), rgba(16,39,37,.92)), url("assets/images/wealthpro-contact.png") right center/cover; }
+.service-card:nth-child(1) { background: linear-gradient(135deg, rgba(16,39,37,.15), rgba(16,39,37,.9)), url("assets/images/wealthpro-accounting.png") 42% center/cover; }
+.service-card:nth-child(2) { background: linear-gradient(135deg, rgba(16,39,37,.25), rgba(16,39,37,.92)), url("assets/images/wealthpro-advisory.png") 58% center/cover; }
+.service-card:nth-child(3) { background: linear-gradient(135deg, rgba(16,39,37,.1), rgba(16,39,37,.92)), url("assets/images/wealthpro-tax-compliance.png") 68% center/cover; }
 .service-card > * { position: relative; z-index: 2; }
 .card-index { margin-bottom: auto; color: #cce995; font-family: var(--serif); font-size: 1.1rem; }
 .service-card h3 { margin-bottom: 10px; font-size: 1.7rem; }
